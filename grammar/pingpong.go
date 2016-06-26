@@ -1,4 +1,4 @@
-package main
+package grammar
 
 import (
 	"fmt"
@@ -9,15 +9,15 @@ type Ball struct {
 	hits int
 }
 
-func call_pingpong() {
+func Call_pingpong() {
 	table := make(chan *Ball)
 	go player("ping", table)
 	go player("pong", table)
-	
+
 	table <- new(Ball)
 	time.Sleep(1 * time.Second)
 	<-table
-	
+
 	panic("show the stacks")
 }
 

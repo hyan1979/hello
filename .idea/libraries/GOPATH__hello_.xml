@@ -11,7 +11,13 @@
     <JAVADOC />
     <SOURCES />
     <excluded>
+      <root url="file://$PROJECT_DIR$/grammar" />
+      <root url="file://$PROJECT_DIR$/io" />
+      <root url="file://$PROJECT_DIR$/math" />
+      <root url="file://$PROJECT_DIR$/oop" />
+      <root url="file://$PROJECT_DIR$/net" />
       <root url="file://$PROJECT_DIR$" />
+      <root url="file://$PROJECT_DIR$/gotoc" />
     </excluded>
   </library>
 </component>
